@@ -1,0 +1,63 @@
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --clr-light-slate-blue: hsl(252, 100%, 67%); /* background */
+  --clr-light-royal-blue: hsl(241, 81%, 54%); /* background */
+  --clr-violet-blue: hsla(256, 72%, 46%, 1); /* circle */
+  --clr-persian-blue: hsla(241, 72%, 46%, 0); /* circle */
+
+  --ff-hanken-grotesk: 'Hanken Grotesk', sans-serif;
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf')
+    format('truetype-variations');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+optgroup,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  line-height: 1.5;
+}
