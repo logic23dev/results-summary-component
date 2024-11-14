@@ -58,6 +58,228 @@ select {
 
 body {
   min-height: 100vh;
-  font-size: 18px;
+  font-family: var(--ff-hanken-grotesk);
+  font-size: 1.125rem;
+  font-weight: var(--fw-500);
   line-height: 1.5;
+}
+
+.card-result {
+  background-image: linear-gradient(
+    var(--clr-light-slate-blue),
+    var(--clr-light-royal-blue)
+  );
+  padding: 1.25rem 3.125rem 2.1875rem 3.125rem;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-result h1 {
+  font-size: 1.125rem;
+  color: var(--clr-light-lavender);
+}
+
+.result-circle {
+  background-image: linear-gradient(
+    var(--clr-violet-blue),
+    var(--clr-persian-blue)
+  );
+  width: 8.4375rem;
+  height: 8.4375rem;
+  border-radius: 50%;
+  margin-block: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-circle .circle-score {
+  font-size: 3.4375rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-800);
+}
+
+.result-circle .max-score {
+  font-size: 0.9375rem;
+  color: hsl(245, 98%, 74%);
+  font-weight: var(--fw-700);
+}
+
+.card-result h2 {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  margin-bottom: 0.625rem;
+}
+
+.card-result p {
+  font-size: 0.9375rem;
+  color: var(--clr-light-lavender);
+  line-height: 1.4;
+}
+
+.card-summary {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card-summary h3 {
+  font-size: 1.125rem;
+  color: var(--clr-dark-gray-blue);
+}
+
+.btn {
+  border: none;
+  background: var(--clr-dark-gray-blue);
+  font-size: 1.125rem;
+  font-weight: var(--fw-700);
+  color: var(--clr-white);
+  width: 100%;
+  height: 3.4375rem;
+  border-radius: 2.1875rem;
+  cursor: pointer;
+  margin-top: 0.625rem;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    var(--clr-light-slate-blue),
+    var(--clr-light-royal-blue)
+  );
+}
+
+.summary-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem 0.9375rem;
+  border-radius: 0.625rem;
+}
+
+.summary-item .item-title {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.item-title img {
+  width: 20px;
+  height: 20px;
+}
+
+.item-title p {
+  font-size: 1rem;
+}
+
+.item-score {
+  font-size: 1rem;
+  font-weight: var(--fw-700);
+  color: hsl(283, 3%, 58%);
+}
+
+.item-score .score {
+  color: var(--clr-dark-gray-blue);
+}
+
+.summary-item.reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: var(--clr-light-red);
+}
+
+.summary-item.memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  color: var(--clr-orangey-yellow);
+}
+
+.summary-item.verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  color: var(--clr-green-teal);
+}
+
+.summary-item.visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  color: var(--clr-cobalt-blue);
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    border-radius: 1.875rem;
+    max-width: 45.625rem;
+    box-shadow: 0 0 3.875rem -0.875rem hsla(234, 85%, 45%, 0.3);
+  }
+
+  .card-result {
+    flex: 50%;
+    border-radius: 1.875rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+  }
+
+  .card-summary {
+    flex: 50%;
+  }
+
+  .card-result h1 {
+    font-size: 1.5rem;
+  }
+
+  .result-circle {
+    width: 11.875rem;
+    height: 11.875rem;
+  }
+
+  .result-circle .circle-score {
+    font-size: 4.375rem;
+  }
+
+  .card-result h2 {
+    font-size: 1.875rem;
+  }
+
+  .card-result p {
+    font-size: 1.125rem;
+  }
+
+  .card-result {
+    padding: 2.1875rem 3.125rem;
+  }
+
+  .card-summary {
+    padding: 2.1875rem 2.5rem;
+  }
+
+  .card-summary h3 {
+    font-size: 1.5rem;
+  }
+
+  .item-title p {
+    font-size: 1.125rem;
+  }
+
+  .item-score {
+    font-size: 1.125rem;
+  }
+
+  .result-circle .max-score {
+    font-size: 1.125rem;
+  }
 }
