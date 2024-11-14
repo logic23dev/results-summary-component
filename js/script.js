@@ -1,4 +1,4 @@
-fetch('../data.json')
+fetch('data.json')
   .then(response => response.json())
   .then(data => fillComponent(data))
   .catch(error => console.error('Unable to fetch data:', error));
