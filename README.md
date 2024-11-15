@@ -3,8 +3,8 @@
 This is a solution to the [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) challenge on Frontend Mentor.
 
 <h3 align='center'>
-<a href="">Live</a>
-| <a href="">Solution</a>
+<a href="https://logic23dev.github.io/results-summary-component/">Live</a>
+| <a href="https://www.frontendmentor.io/solutions/results-summary-component-3eNdqHm1S7">Solution</a>
 | <a href="https://www.frontendmentor.io/profile/logic23dev">Profile</a>
 </h3>
 
